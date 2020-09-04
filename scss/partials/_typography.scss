@@ -1,7 +1,18 @@
-h1, h2, h3 {
-    font-family: $type-heading;
-}
+// TYPE
 
 body {
-    font-family: $type-body;
+    font-family: $type-base;
+    max-width: $type-linewidth;
+    font-weight: $type-book;
+    font-size: 100%;
+    line-height: 1.5;
 }
+
+h1, h2, h3 {
+    font-family: $type-base;
+    font-weight: $type-bold;
+    margin: .5em 0;
+    max-width: $type-linewidth;
+    color: $accent-color;
+}
+

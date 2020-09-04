@@ -1,10 +1,18 @@
-$color-background: red;
-$type-heading: "lora", helvetica, arial, sans-serif;
-$type-body: "fira-sans", georgia, serif;
+// VARIABLES
+$color-background: pink;
+$type-base: 'Poppins', sans-serif;
+$type-book: 300;
+$type-bold: 700;
+$type-linewidth: 38em;
+
+// COLORS
+$type-color: rgba(0,0,0,.8);
+$accent-color: #00DEFF;
 
 @import "partials/toc";
 @import "partials/typography";
 
-body {
-  background: $color-background;
-}
+// TEST
+// body {
+//   background: $color-background;
+// }

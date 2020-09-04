@@ -1,0 +1,10 @@
+$color-background: red;
+$type-heading: "lora", helvetica, arial, sans-serif;
+$type-body: "fira-sans", georgia, serif;
+
+@import "partials/toc";
+@import "partials/typography";
+
+body {
+  background: $color-background;
+}

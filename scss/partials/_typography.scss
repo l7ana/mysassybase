@@ -1,18 +1,39 @@
 // TYPE
 
 body {
-    font-family: $type-base;
+    font-family: $type-body;
     max-width: $type-linewidth;
-    font-weight: $type-book;
+    font-weight: 400;
     font-size: 100%;
     line-height: 1.5;
+    color: $type-color;
 }
 
 h1, h2, h3 {
-    font-family: $type-base;
-    font-weight: $type-bold;
+    font-family: $type-heading;
     margin: .5em 0;
     max-width: $type-linewidth;
+}
+
+h1 {font-weight: 800; font-size: 3em; line-height: 1em;}
+
+h2 {font-weight: 700; font-size: 2.5em; line-height: 1.1em;}
+
+h3 {font-weight: 400; font-size: 1.5em; line-height: 1.2em;}
+
+p {
+    margin: 0 0 .5em .25em;
+    max-width: $type-linewidth;
+}
+
+.headline {
     color: $accent-color;
 }
 
+.subheadline {
+    color: $type-color-darkgrey;
+}
+
+a {color: $type-color-links;}
+
+a:hover {color: $type-color-links-2; font-weight: 500;}

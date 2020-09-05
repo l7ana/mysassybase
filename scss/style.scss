@@ -1,16 +1,22 @@
 // VARIABLES
 $color-background: pink;
-$type-base: 'Poppins', sans-serif;
-$type-book: 300;
-$type-bold: 700;
+$type-body: 'roc-grotesk', serif;
+$type-heading: 'roc-grotesk-wide', sans-serif;
 $type-linewidth: 38em;
 
 // COLORS
 $type-color: rgba(0,0,0,.8);
-$accent-color: #00DEFF;
+$type-color-darkgrey: rgba(0,0,0,0.75);
+$type-color-lightgrey: rgba(0,0,0,0.5);
+$type-color-links: #2f4193;
+$type-color-links-2: #061766;
+$accent-color: #16AE58;
 
 @import "partials/toc";
 @import "partials/typography";
+@import "partials/buttons";
+
+
 
 // TEST
 // body {

@@ -44,17 +44,88 @@ header, footer, aside, nav, main, figure, section, article {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "roc-grotesk", serif;
   max-width: 38em;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 100%;
   line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h1, h2, h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-family: "roc-grotesk-wide", sans-serif;
   margin: 0.5em 0;
   max-width: 38em;
-  color: #00DEFF;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 1em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.1em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+p {
+  margin: 0 0 0.5em 0.25em;
+  max-width: 38em;
+}
+
+.headline {
+  color: #16AE58;
+}
+
+.subheadline {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+a {
+  color: #2f4193;
+}
+
+a:hover {
+  color: #061766;
+  font-weight: 500;
+}
+
+button {
+  font-size: inherit;
+  font-family: "roc-grotesk", serif;
+}
+
+button,
+a.button {
+  display: inline-block;
+  background-color: #2f4193;
+  color: #ffffff;
+  padding: 0.75em 1em;
+  margin: 0.5em 0;
+  border: 1.5px solid #2f4193;
+  cursor: pointer;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+button.alt,
+a.button.alt {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1.5px solid #061766;
+  color: #2f4193;
+}
+
+button:hover,
+a.button:hover {
+  background-color: #061766;
+  color: #ffffff;
+  border: 1.5px solid #061766;
 }

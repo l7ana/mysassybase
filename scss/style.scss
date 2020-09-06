@@ -2,7 +2,7 @@
 $color-background: pink;
 $type-body: 'roc-grotesk', serif;
 $type-heading: 'roc-grotesk-wide', sans-serif;
-$type-linewidth: 38em;
+$type-linewidth: 45em;
 
 // COLORS
 $type-color: rgba(0,0,0,.8);
@@ -12,9 +12,15 @@ $type-color-links: #2f4193;
 $type-color-links-2: #061766;
 $accent-color: #16AE58;
 
+// BREAKPOINT
+
+
 @import "partials/toc";
 @import "partials/typography";
 @import "partials/buttons";
+@import "partials/media";
+@import "partials/layout";
+@import "partials/grid";
 
 
 

@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 /* 
 MEDIA QUERIES (Mobile First)
     #DEFAULT/Mobile
@@ -10,10 +12,10 @@ MEDIA QUERIES (Mobile First)
 
 /* LAYOUT */
 
-
 body {
     margin: 0;
-    padding: 0;
+    font-size: 88.75%;
+    max-width: 100%;
 }
 
 .container {
@@ -22,29 +24,23 @@ body {
 }
 
 // SMALL/Mobile+
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-small - 1) {
     body {font-size: 88.75%;}
 }
 
 // MEDIUM/Tablet
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-small) {
     body {font-size: 100%;}
 }
 
 // LARGE/Desktop
-@media (min-width: 1050px) {
+@media (min-width: $breakpoint-medium) {
     body {font-size: 100%;}
-    .container {
-        max-width: 1050px;
-        padding: 0 50px;
-    }
+    .container { max-width: $breakpoint-medium;}
 }
 
 // EXTRALARGE/Desktop+
-@media (min-width: 1250px) {
+@media (min-width: $breakpoint-large) {
     body {font-size: 112.5%;}
-    .container {
-        max-width: 1250px;
-        padding: 0 50px;
-    }
+    .container {max-width: $breakpoint-large;}
 }

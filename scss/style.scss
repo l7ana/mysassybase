@@ -11,9 +11,12 @@ $type-color-lightgrey: rgba(0,0,0,0.5);
 $type-color-links: #2f4193;
 $type-color-links-2: #061766;
 $accent-color: #16AE58;
+$hero-bg-color: #E9F6F0;
 
 // BREAKPOINT
-
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
 
 @import "partials/toc";
 @import "partials/typography";
@@ -21,7 +24,7 @@ $accent-color: #16AE58;
 @import "partials/media";
 @import "partials/layout";
 @import "partials/grid";
-@import "structure.scss";
+@import "partials/structure";
 
 
 

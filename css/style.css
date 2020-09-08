@@ -132,13 +132,6 @@ a:hover {
   font-weight: 500;
 }
 
-.site-nav a, .site-header a {
-  text-decoration: none;
-}
-.site-nav li, .site-header li {
-  list-style: none;
-}
-
 button {
   font-size: inherit;
   font-family: "roc-grotesk", serif;
@@ -176,6 +169,10 @@ img {
   height: auto;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* 
 MEDIA QUERIES (Mobile First)
     #DEFAULT/Mobile
@@ -188,7 +185,8 @@ MEDIA QUERIES (Mobile First)
 /* LAYOUT */
 body {
   margin: 0;
-  padding: 0;
+  font-size: 88.75%;
+  max-width: 100%;
 }
 
 .container {
@@ -213,7 +211,6 @@ body {
 
   .container {
     max-width: 1050px;
-    padding: 0 50px;
   }
 }
 @media (min-width: 1250px) {
@@ -223,7 +220,6 @@ body {
 
   .container {
     max-width: 1250px;
-    padding: 0 50px;
   }
 }
 .row {
@@ -271,4 +267,58 @@ body {
 }
 .demo .column p {
   max-width: none;
+}
+
+.site-header,
+.site-footer {
+  background-color: #16AE58;
+  padding: 0.5em;
+}
+.site-header a,
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.site-header .site-identity h1 {
+  font-family: "roc-grotesk-wide", sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0.2em 0 0 0;
+  white-space: nowrap;
+}
+.site-header .site-identity h1 a {
+  display: block;
+  padding: 0.5em;
+}
+
+.site-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-nav a {
+  display: block;
+  padding: 1em;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 3em 0;
+}
+
+.hero {
+  padding: 5em 0;
+  background: #E9F6F0;
 }

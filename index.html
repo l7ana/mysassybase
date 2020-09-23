@@ -11,17 +11,16 @@
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header" id="top">
         <div class="site-identity">
             <h1><a href="">Liana Sassy Base</a></h1>
         </div>
         <nav class="site-nav">
             <ul>
-                <li><a href="">Lorem</a></li>
-                <li><a href="">Ipsum</a></li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#layout">Layout</a></li>
             </ul>
         </nav>
-        
     </header>
 
 <main>
@@ -34,10 +33,11 @@
             <p>For a fast, flexible, front-end start that can be fully customized for bespoke UI&nbsp;designs.</p>
 
             <a href="https://github.com/l7ana/mysassybase" class="button">Github</a>
+            <a href="#typography" class="button alt">Typography</a>
         </div>
     </section>
 
-    <section>
+    <section id="typography">
         <h2 class="sectionhead">Typographic Scale</h2>
         <div class="container">
             <h1>Heading 1</h1>
@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="layout">
         <div class="container">
             <h2 class="sectionhead">Sample Layouts</h2>
             <div class="row">
@@ -157,15 +157,25 @@
     </section>
         
 </main>
- 
-<header class="site-footer">
+
+<footer class="site-footer">
     <nav class="site-nav">
         <ul>
-            <li><a href="">Lorem</a></li>
-            <li><a href="">Ipsum</a></li>
+            <li><a href="#top">Top</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#layout">Layout</a></li>
         </ul>
     </nav>
-</header>
+</footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
 
 </body>
 
